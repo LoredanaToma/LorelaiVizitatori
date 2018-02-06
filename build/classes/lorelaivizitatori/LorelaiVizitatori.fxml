@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lorelaivizitatori.LorelaiVizitatoriController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TableView fx:id="tabel" layoutX="83.0" layoutY="58.0" prefHeight="282.0" prefWidth="636.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="58.0">
+        <columns>
+          <TableColumn fx:id="cID" prefWidth="45.0" text="ID" />
+          <TableColumn fx:id="cNume" prefWidth="88.0" text="Nume" />
+            <TableColumn fx:id="cPrenume" prefWidth="131.0" text="Prenume" />
+            <TableColumn fx:id="cEmail" prefWidth="150.0" text="Email" />
+            <TableColumn fx:id="cMesaj" prefWidth="349.0" text="Mesaj" />
+        </columns>
+      </TableView>
+      <Label layoutX="83.0" layoutY="369.0" text="Nume" AnchorPane.topAnchor="366.0" />
+      <Label layoutX="80.0" layoutY="420.0" text="Prenume" />
+      <Label layoutX="488.0" layoutY="358.0" text="Email" AnchorPane.topAnchor="366.0" />
+      <Label layoutX="84.0" layoutY="465.0" text="Mesaj" />
+      <TextArea fx:id="mesaj" layoutX="190.0" layoutY="465.0" prefHeight="78.0" prefWidth="243.0" AnchorPane.leftAnchor="190.0" />
+      <TextField fx:id="nume" layoutX="193.0" layoutY="364.0" prefHeight="31.0" prefWidth="118.0" AnchorPane.leftAnchor="190.0" AnchorPane.topAnchor="360.0" />
+      <TextField fx:id="prenume" layoutX="193.0" layoutY="415.0" prefHeight="31.0" prefWidth="166.0" AnchorPane.leftAnchor="190.0" />
+      <TextField fx:id="email" layoutX="543.0" layoutY="353.0" prefHeight="31.0" prefWidth="178.0" AnchorPane.topAnchor="360.0" />
+      <Button fx:id="badauga" alignment="TOP_LEFT" layoutX="88.0" layoutY="573.0" mnemonicParsing="false" onAction="#adauga" text="Adauga" />
+      <Button fx:id="bmodifica" alignment="TOP_LEFT" layoutX="252.0" layoutY="573.0" mnemonicParsing="false" onAction="#modifica" text="Modifica" AnchorPane.bottomAnchor="35.0" />
+      <Button fx:id="bsterge" alignment="TOP_LEFT" layoutX="416.0" layoutY="573.0" mnemonicParsing="false" onAction="#sterge" prefHeight="31.0" prefWidth="78.0" text="Sterge" AnchorPane.bottomAnchor="35.0" />
+      <Button fx:id="biesire" alignment="TOP_LEFT" layoutX="577.0" layoutY="573.0" mnemonicParsing="false" onAction="#iesire" prefHeight="31.0" prefWidth="69.0" text="Iesire" />
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="286.0" layoutY="21.0" text="Vizualizare vizitatori site" textFill="#e41111">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
